@@ -1,3 +1,3 @@
 # PythonAlgorithm
 
-Add some small slice of algorithm for cv/dl
+Add some small slices of algorithm for cv/dl
