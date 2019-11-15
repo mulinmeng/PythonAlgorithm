@@ -30,7 +30,7 @@ def viterbi_decode(network_space):
             paths_space[layer, sample, best_index] = 1.
 
     #pick the branch with the highest probability
-    all_samples = torch.tensor([i `for i in range(prob_space.shape[-1])])
+    all_samples = torch.tensor([i for i in range(prob_space.shape[-1])])
     best_sample = torch.argmax(prob_space[-1])
     other_samples = all_samples[all_samples != best_sample]
     paths_space[-1, other_samples] = 0.
